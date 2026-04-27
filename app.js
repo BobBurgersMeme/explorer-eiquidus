@@ -835,8 +835,8 @@ app.use('/ext/getsummary', function(req, res) {
                   lastUSDPrice: new Decimal(stats == null || stats.last_usd_price == null ? '0' : stats.last_usd_price.toString()).toFixed(),
                   connections: (connections ? connections : '-'),
                   blockcount: (blockcount ? blockcount : '-'),
-                  masternodeCountOnline: (masternodestotal && mn_enabled != 0 ? mn_enabled : '-'),
-                  masternodeCountOffline: (masternodestotal && mn_total != 0 ? Math.floor(mn_total - mn_enabled) : '-')
+                  masternodeCountOnline: (masternodestotal ? mn_enabled : '-'),
+                  masternodeCountOffline: (masternodestotal ? Math.floor(mn_total - mn_enabled) : '-')
                 };
 
                 if (isInternal) {
