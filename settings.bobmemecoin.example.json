@@ -75,8 +75,8 @@
           "display_order": 2
         },
         "masternodes_panel": {
-          "enabled": false,
-          "display_order": 0
+          "enabled": true,
+          "display_order": 4
         },
         "coin_supply_panel": {
           "enabled": true,
@@ -99,8 +99,8 @@
           "display_order": 0
         },
         "logo_panel": {
-          "enabled": true,
-          "display_order": 3
+          "enabled": false,
+          "display_order": 0
         },
         "spacer_panel_1": {
           "enabled": false,
@@ -338,8 +338,8 @@
     }
   },
   "masternodes_page": {
-    "enabled": false,
-    "show_panels": false,
+    "enabled": true,
+    "show_panels": true,
     "show_nethash_chart": false,
     "show_difficulty_chart": false,
     "page_header": {
@@ -761,8 +761,8 @@
     "getpeerinfo": "getpeerinfo",
     "gettxoutsetinfo": "gettxoutsetinfo",
     "getvotelist": "masternodelist votes",
-    "getmasternodecount": "getmasternodecount",
-    "getmasternodelist": "listmasternodes",
+    "getmasternodecount": "masternode count",
+    "getmasternodelist": "masternodelist",
     "verifymessage": "verifymessage"
   },
   "blockchain_specific": {
