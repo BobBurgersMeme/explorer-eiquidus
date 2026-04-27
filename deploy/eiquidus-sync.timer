@@ -1,0 +1,11 @@
+[Unit]
+Description=Run eIquidus BobMemeCoin sync every minute
+
+[Timer]
+OnBootSec=90
+OnUnitActiveSec=60
+AccuracySec=10
+Unit=eiquidus-sync.service
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,9 @@
+[Unit]
+Description=eIquidus BobMemeCoin block sync
+After=network-online.target mongod.service
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/eiquidus
+ExecStart=/usr/local/bin/eiquidus-sync.sh
